@@ -1,4 +1,11 @@
 # 更新日志
+### 4.20.0 | 2024.06.12
+- 一起听从机模式完善 [#8](https://gitlab.com/Binaryify/neteasecloudmusicapi/-/merge_requests/8)
+- 云盘上传后缀名判断完善
+
+### 4.19.9 | 2024.05.31
+- 云盘上传中文乱码问题修复 [#9](https://gitlab.com/Binaryify/neteasecloudmusicapi/-/issues/9)
+
 ### 4.19.8 | 2024.05.19
 - 云盘上传问题修复 [#7](https://gitlab.com/Binaryify/neteasecloudmusicapi/-/merge_requests/7)
 
