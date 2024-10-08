@@ -5,14 +5,13 @@ const CryptoJS = require('crypto-js')
 const createOption = require('../util/option.js')
 module.exports = async (query, request) => {
   const data = {
+    type: '0',
+    https: 'true',
     username: query.email,
     password: query.md5_password || CryptoJS.MD5(query.password).toString(),
     rememberLogin: 'true',
   }
-  let result = await request(`/api/login`, data, {
-    ...createOption(query),
-    uaType: 'pc',
-  })
+  let result = await request(`/api/w/login`, data, createOption(query))
   if (result.body.code === 502) {
     return {
       status: 200,
